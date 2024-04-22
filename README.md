@@ -1,8 +1,10 @@
 # devChallenges - Testimonial Page
 
-<!-- ![Solution screenshot]() -->
+![Solution screenshot](./docs/screenshots/solution-screenshot.png)
 
-<!-- Personal solution to Testimonial Page challenge from devChallenges: -->
+Personal solution to the Testimonial Page challenge from devChallenges: [Testimonial Page | devChallenges.io | Real-life Coding Projects to become a Software Engineer](https://devchallenges.io/challenge/testimonial-page)
+
+**NOTE: I didn't break down the page into multiple components in order to save time.**
 
 ## Developing
 
