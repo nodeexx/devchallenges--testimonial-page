@@ -18,7 +18,15 @@ const config: Config = {
     },
     extend: {
       colors: {
-        challenge: {},
+        challenge: {
+          yellow: '#F5C044',
+          green: '#4CA154',
+          white: '#FFFFFF',
+          'pastel-white': 'FAFAF9',
+          'light-gray': '#D4D4D8',
+          'dark-gray': '#52525A',
+          black: '#18181B',
+        },
         border: 'hsl(var(--border) / <alpha-value>)',
         input: 'hsl(var(--input) / <alpha-value>)',
         ring: 'hsl(var(--ring) / <alpha-value>)',
