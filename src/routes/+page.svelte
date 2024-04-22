@@ -29,6 +29,7 @@ const REVIEW_CARDS: ReviewCard[] = [
     quote: 'I highly recommend the Writecream Business Description',
   },
 ];
+const RANGE_OF_5 = Array.from({ length: 5 }, (_, i) => i);
 </script>
 
 <div class="flex flex-col gap-16 lg:flex-row lg:gap-8">
@@ -77,14 +78,11 @@ const REVIEW_CARDS: ReviewCard[] = [
             draggable="false"
           />
           <div class="flex items-center gap-1">
-            {#each Array(card.stars) as _}
+            {#each RANGE_OF_5 as starIndex}
               <div
-                class="h-[24px] w-[24px] bg-[url('/images/Star_fill.svg')] bg-[length:24px_24px] bg-no-repeat"
-              ></div>
-            {/each}
-            {#each Array(5 - card.stars) as _}
-              <div
-                class="h-[24px] w-[24px] bg-[url('/images/Star_fill_gray.svg')] bg-[length:24px_24px] bg-no-repeat"
+                class="h-[24px] w-[24px] bg-[length:24px_24px] bg-no-repeat"
+                class:star--filled="{starIndex + 1 <= card.stars}"
+                class:star--empty="{starIndex + 1 > card.stars}"
               ></div>
             {/each}
           </div>
@@ -103,3 +101,13 @@ const REVIEW_CARDS: ReviewCard[] = [
     {/each}
   </div>
 </div>
+
+<style lang="postcss">
+.star--filled {
+  background-image: url('/images/Star_fill.svg');
+}
+
+.star--empty {
+  background-image: url('/images/Star_fill_gray.svg');
+}
+</style>
