@@ -59,7 +59,7 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        sans: [...defaultTheme.fontFamily.sans],
+        sans: ['Sora Variable', ...defaultTheme.fontFamily.sans],
       },
     },
   },

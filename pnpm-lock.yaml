@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/sora':
+        specifier: ^5.0.18
+        version: 5.0.18
       bits-ui:
         specifier: ^0.21.4
         version: 0.21.4(svelte@4.2.15)
@@ -549,6 +552,9 @@ packages:
 
   '@floating-ui/utils@0.2.1':
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
+
+  '@fontsource-variable/sora@5.0.18':
+    resolution: {integrity: sha512-pBZrcDr9kHjc7Aoe1G4ZCLCSLgC1FnHNl2VIlSWDmTlZtenBq6jafYxVtm/0k2Ts31/6S3b4b8/WLEoCeOubqw==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -2872,6 +2878,8 @@ snapshots:
       '@floating-ui/utils': 0.2.1
 
   '@floating-ui/utils@0.2.1': {}
+
+  '@fontsource-variable/sora@5.0.18': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
