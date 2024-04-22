@@ -32,7 +32,9 @@ const REVIEW_CARDS: ReviewCard[] = [
 const RANGE_OF_5 = Array.from({ length: 5 }, (_, i) => i);
 </script>
 
-<div class="flex flex-col gap-16 lg:flex-row lg:gap-8">
+<div
+  class="flex w-full max-w-[1136px] flex-col items-center gap-16 xl:flex-row xl:gap-8"
+>
   <!-- Hero part -->
   <div class="flex-1">
     <!-- Hero icon -->
@@ -65,7 +67,7 @@ const RANGE_OF_5 = Array.from({ length: 5 }, (_, i) => i);
   </div>
 
   <!-- Reviews part -->
-  <div class="grid w-[572px] shrink-0 grid-cols-1 gap-[40px] lg:pt-2">
+  <div class="grid w-[572px] auto-rows-min grid-cols-1 gap-[40px] xl:pt-2">
     {#each REVIEW_CARDS as card}
       <div
         class="flex h-[185px] w-[357px] flex-col gap-4 justify-self-end rounded-xl bg-challenge-white px-[40px] py-[28px] shadow-[0_30px_100px_0] shadow-challenge-black/5 even:justify-self-start"
